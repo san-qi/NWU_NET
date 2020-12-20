@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@android:drawable/ic_dialog_dialer"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="@string/menu_gallery" />
+        <item android:id="@+id/menu_authentication"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_authentication" >
+            <menu>
+                <item
+                    android:id="@+id/nav_netCertification"
+                    android:title="@string/menu_netCertification" />
+                <item
+                    android:id="@+id/nav_webview"
+                    android:title="@string/menu_webView" />
+            </menu>
+        </item>
+    </group>
+</menu>

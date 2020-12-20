@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">NWU NET</string>
+    <string name="app_description">一个没有美工的简陋APP</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">认证主页</string>
+    <string name="menu_gallery">事项</string>
+    <string name="menu_netCertification">身份录入</string>
+    <string name="menu_authentication">校园网信息</string>
+    <string name="menu_webView">状态查看</string>
+
+    <string name="netCertification_formIdText">学号</string>
+    <string name="netCertification_formPasswordText">密码</string>
+    <string name="netCertification_editEnable">读写保护</string>
+    <string name="netCertification_warningText">请确保密码的正确性\n
+        否则再次认证时可能出现密码错误
+    </string>
+
+
+    <string name="setting_finish">退出</string>
+
+</resources>
