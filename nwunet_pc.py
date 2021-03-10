@@ -44,14 +44,13 @@ def check_list(headers):
         if session['deviceType'].lower() == 'unknown':
             acct_unique_id = session['acct_unique_id']
             device_type = session['deviceType']
-            break
         elif session['deviceType'].lower() == 'pc':
             acct_unique_id = session['acct_unique_id']
             device_type = session['deviceType']
-    # 如果unknown和pc都不是的话,下线第一个
-    # if acct_unique_id == None:
-    #     acct_unique_id = check_list[0]['acct_unique_id']
-    #     device_type = check_list[0]['deviceType']
+    else:
+        # 如果unknown和pc都不是的话,下线第一个
+        acct_unique_id = check_list[0]['acct_unique_id']
+        device_type = session['deviceType']
     r = requests.delete(base_url+f'/acctUniqueId/{acct_unique_id}?noCache={int(time.time()*1000)}', headers=headers)
     if r.status_code == 200:
         print(f"已移除一台{device_type}设备")
